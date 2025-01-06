@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommate Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#" id="nav-login">Login</a>
+        <a href="#" id="nav-signup">Signup</a>
+        <a href="#" id="nav-home">Home</a>
+        <a href="#" id="nav-profile">Profile</a>
+    </nav>
+
+    <div class="container" id="login-screen">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="signup-screen">
+        <h1>Signup</h1>
+        <form id="signup-form">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" placeholder="Enter your email" required>
+
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter your password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="home-screen">
+        <h1>Welcome to Roommate Finder</h1>
+        <p>Select an option from the navigation to get started.</p>
+    </div>
+
+    <div class="container hidden" id="profile-setup-screen">
+        <h1>Profile Setup</h1>
+        <form id="profile-setup-form">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Enter your location" required>
+
+            <label for="rent">Rent Budget</label>
+            <input type="number" id="rent" placeholder="Enter your rent budget" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="habits">Habits</label>
+            <select id="habits" required>
+                <option value="">Select your habit</option>
+                <option value="smoking">Smoking</option>
+                <option value="clean">Cleanliness</option>
+                <option value="pets">Pets</option>
+            </select>
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+
+    <div class="footer">&copy; 2025 Roommate Finder</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
